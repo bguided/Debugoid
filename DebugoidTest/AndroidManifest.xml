@@ -3,10 +3,10 @@
       package="novoda.debugoid.test"
       android:versionCode="1"
       android:versionName="1.0">
-    <application android:icon="@drawable/icon" android:label="@string/app_name">
-
-
+    <application>
+        <uses-library android:name="android.test.runner" />
     </application>
-    <uses-sdk android:minSdkVersion="8" />
-
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                     android:targetPackage="novoda.debugoid"
+                     android:label="Tests for novoda.tastelondon"/>
 </manifest> 
